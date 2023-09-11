@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: black;
+      margin-right: 20px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .nav-items:hover{
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+    }
+    .nav-items a {
+      text-decoration: none;
+      color: gold;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 650px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(" https://i.ibb.co/RvbDfr3/images-4.jpg ");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+      margin-right: 20px;
+      
+    }
+
+    .about-me img {
+      width: 700px;
+      max-width:;
+      height: 400px;
+      background-color: black;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: darkgoldenrod;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: ;
+      margin: 60px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+    .ICT{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+        
+    }
+    .ICCT{
+        background-color: black;
+        padding: 5px;
+    }
+    .MAIN{
+        background-color: black;
+    }
+    .CSS{
+        color: gold;
+        background-color: black;
+    }
+    .PH{
+        background-color: darkorange;
+        color: black;
+        border-radius: 5px;
+        font-family: sans-serif;
+        font-weight: bold;
+        
+    }
+    .LOGO{
+        background-color: black;
+        padding: 30px;
+        margin: 0px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .prof{
+        color:white;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .ABT{
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+        
+        
+    }
+    .ME-ABT{
+        color: darkgoldenrod;
+    }
+    .work-text{
+        font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="LOGO"> 
+                <a href="#" class="logo">
+                  <span class="prof"> Code </span>  <span class="PH"> Phantom </span>  
+                </a>
+    </div>
+    <nav class="nav-items">
+      <a href="index.html">Home</a>
+      <a href="About.html"> About </a>
+      <a href=" https://code-koji.github.io/ICT-HOPE-PORTFOLIO/index.html "> All Sub </a>
+      <a href = " DEV.html "> Card Info </a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>AN ICT STUDENT</h1>
+      <p class="ICCT"> <span class="ICT"> I Am An ICT Student And This is <span class="CSS"> My Portfolio For CSS.  </span></span> </p>
+       <a href="About.html">
+            <button> PORTFOLIO </button>
+       </a>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">Adaptability</p>
+        <p class="work-text"> Adaptability refers to the ability to adjust and change in response to new circumstances or challenges. It involves being flexible, open-minded, and able to think on one's feet. </p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">Skills</p>
+        <p class="work-text">A skilled front-end web developer possesses expertise in HTML, CSS, JavaScript, and frameworks/libraries like React or Angular. They also have an eye for design, responsiveness, cross-browser compatibility, and optimization techniques.</p>
+      </div>
+      <div class="work">
+        <i class="fa fa-brain"></i>
+        <p class="work-heading"> Intelligence </p>
+        <p class="work-text"> An effective front-end web developer exhibits problem-solving skills, attention to detail, adaptability, creativity, efficient coding practices, effective communication, and continuous learning to stay updated with evolving technologies and industry trends. </p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2 class="ME-ABT"> About Me</h2>
+        <p> <span  class="ABT"> Passionate front-end web developer with a flair for design and a knack for creating visually appealing and user-friendly websites. Proficient in HTML, CSS, and JavaScript, with experience in frameworks like React. Dedicated to delivering high-quality code and constantly expanding knowledge to stay ahead in the ever-evolving tech industry. </span>  </p>
+      </div>
+      <img src=" https://i.ibb.co/86C1JhY/images-2.jpg " alt="me">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; ICT HOPE CSS </div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href = "tel:+63-975-541-7909"> Contact </a>
+        
+            
+      </div>
+      <div class="links">
+        <span> Social Links </span>
+        
+        <a href=" https://www.facebook.com/profile.php?id=100084842475968&mibextid=nW3QTL ">
+            <i class="fab fa-facebook"></i></a>
+            
+        
+            
+        <a href="https://t.me/ZXMaku">
+            <i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
